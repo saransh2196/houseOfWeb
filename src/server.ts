@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //mongodb connection
-const mongoURI = `${MONGODB_URI}/${DB_NAME}`;
+const mongoURI = `mongodb+srv://saransh2196:cRhOaqKvgIfxxe4d@user-management-cluster.zuzohca.mongodb.net/?retryWrites=true&w=majority&appName=user-management-cluster`;
 mongoose.connect(mongoURI);
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
